@@ -67,6 +67,11 @@ export default function WizardPage() {
     }
   }
 
+  const cleanName = name.trim();
+  const patternName = cleanName
+    ? `Woollilly Raglan with "${cleanName}"`
+    : "Woollilly Raglan";
+
   const steps: StepConfig[] = [
     {
       id: "welcome",
@@ -180,7 +185,7 @@ export default function WizardPage() {
     {
       id: "bust",
       title: "Rinnanympärys",
-      lead: "Mittaa rennossa asennossa, teippi vaakasuorassa.",
+      lead: "Mittaa rennossa asennossa, mittanauha vaakasuorassa.",
       hint: "cm",
       render: () => (
         <div className="flex items-center gap-3">
@@ -283,6 +288,12 @@ export default function WizardPage() {
       cta: "Luo räätälöity ohje",
       render: () => (
         <div className="space-y-3 text-sm text-[var(--muted)]">
+          <div className="rounded-2xl border border-[var(--line)] bg-white/70 px-4 py-3 text-[var(--ink)]">
+            <div className="text-xs uppercase tracking-[0.2em] text-[var(--muted)]">
+              Neuleohjeen nimi
+            </div>
+            <div className="font-display text-2xl">{patternName}</div>
+          </div>
           <div className="flex items-center justify-between border-b border-[var(--line)] pb-2">
             <span>Nimi</span>
             <span className="font-medium text-[var(--ink)]">{name || "—"}</span>
@@ -432,7 +443,7 @@ export default function WizardPage() {
 
         {result?.render?.html && (
           <section className="rounded-[28px] border border-[var(--line)] bg-white/70 p-6 shadow-[var(--shadow)]">
-            <h2 className="font-display text-2xl text-[var(--ink)]">Esikatselu</h2>
+            <h2 className="font-display text-2xl text-[var(--ink)]">{patternName}</h2>
             <div className="prose mt-4 max-w-none" dangerouslySetInnerHTML={{ __html: result.render.html }} />
             <pre className="mt-4 overflow-auto rounded-2xl bg-[var(--bg-soft)] p-3 text-xs text-[var(--ink)]">
               {JSON.stringify(result.results, null, 2)}
