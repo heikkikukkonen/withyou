@@ -6,22 +6,17 @@ export default function Home() {
     <main className="mx-auto max-w-6xl px-6 pb-16 pt-10">
       <section className="grid items-center gap-10 lg:grid-cols-2">
         <div className="space-y-6">
-          <div className="flex items-center gap-5">
-            <div className="grid h-20 w-20 place-items-center overflow-hidden rounded-full border border-[var(--line)] bg-white/80 shadow-sm">
+          <div className="flex flex-col items-start gap-4">
+            <div className="grid h-56 w-56 place-items-center overflow-hidden rounded-full border border-[var(--line)] bg-white/80 shadow-[var(--shadow)]">
               <Image
                 src="/logo.jpg"
                 alt="Woollilly logo"
-                width={80}
-                height={80}
+                width={224}
+                height={224}
                 className="h-full w-full object-cover"
               />
             </div>
-            <div>
-              <div className="font-display text-2xl text-[var(--ink)]">Woollilly · With You</div>
-              <div className="text-xs uppercase tracking-[0.25em] text-[var(--muted)]">
-                Pehmeä atelier
-              </div>
-            </div>
+            <div className="font-display text-3xl text-[var(--ink)]">Woollilly · With You</div>
           </div>
 
           <div className="inline-flex items-center gap-2 rounded-full border border-[var(--line)] bg-white/70 px-3 py-1 text-xs text-[var(--muted)]">
@@ -102,15 +97,43 @@ export default function Home() {
           </div>
           <div className="lg:col-span-2 space-y-4 text-[var(--muted)] leading-relaxed">
             <p>
-              Teollinen logiikka opetti meille standardit. Käsityö on kuitenkin toista:
-              se syntyy ajasta, huolenpidosta ja ihmisestä. With You palauttaa
-              lähtökohdan sinne minne se kuuluu — sinuun.
+              Woollilly · With You syntyi yksinkertaisesta havainnosta: vaatteet tehdään
+              ihmisille, mutta ohjeet tehdään yhä koolle. Teollinen maailma opetti meille
+              standardit ja taulukot, mutta käsityön ytimessä ne tuntuvat vierailta.
             </p>
             <p>
-              Syötät mitat ja neuletiheyden, ja saat ohjeen, joka on laskettu sinulle.
-              Ei taulukoita, ei arvaamista, ei “mikä koko minä olen?” — vaan
-              “tehdään tämä sinulle”.
+              With You tarkoittaa, että me aloitamme sinusta. Se kuuntelee sinun mittojasi,
+              sinun käsialaasi ja sinun tapaa olla kehossa. Ei siksi, että sinua pitäisi
+              korjata — vaan siksi, että olet jo riittävä lähtökohta.
             </p>
+            <p>
+              Kun ihminen typistetään keskiarvoksi, kaikki häviävät. Siksi With You on
+              vastalause: neuleohje ei ole kaava, vaan keskustelu vaatteen ja ihmisen välillä.
+              Syötät mitat ja neuletiheyden, ja saat ohjeen, joka kulkee rinnallasi.
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-10 grid gap-6 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
+          <div className="rounded-[2.5rem] border border-[var(--line)] bg-white/70 p-6 shadow-[var(--shadow)]">
+            <h3 className="font-display text-2xl text-[var(--ink)]">
+              Neuleohje ei ole kaava, vaan keskustelu
+            </h3>
+            <p className="mt-3 text-[var(--muted)] leading-relaxed">
+              With You -ohje sanoo: “kerro kuka olet, niin tehdään tämä yhdessä.”
+              Se on kuunteleva ja kunnioittava keskustelu vaatteen ja ihmisen välillä.
+            </p>
+          </div>
+
+          <div className="relative overflow-hidden rounded-[2.5rem] border border-[var(--line)] bg-white/70 shadow-[var(--shadow)]">
+            <div className="relative aspect-[4/3]">
+              <Image
+                src="/hero-2.jpg"
+                alt="Woollilly story imagery"
+                fill
+                className="object-cover"
+              />
+            </div>
           </div>
         </div>
       </section>
