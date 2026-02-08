@@ -63,8 +63,8 @@ export function generateTopDownRaglan(
       castOnStitches: castOn,
       yokeIncreaseRounds: yokeIncRounds,
       separationStitchesBody: sepBodySts,
-      bodyLengthRows,
-      sleeveLengthRows,
+      bodyLenRows,
+      sleeveLenRows,
       cuffStitchesEstimate: Math.max(28, cuffSts),
     },
   };

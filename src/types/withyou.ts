@@ -43,8 +43,8 @@ export type GeneratedPattern = {
     castOnStitches: number;
     yokeIncreaseRounds: number;
     separationStitchesBody: number;
-    bodyLengthRows: number;
-    sleeveLengthRows: number;
+    bodyLenRows: number;
+    sleeveLenRows: number;
     cuffStitchesEstimate: number;
   };
   // Renderöinti pidetään erillään, mutta MVP:ssä voi palauttaa myös valmiin HTML:n
