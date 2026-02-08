@@ -6,18 +6,18 @@ export default function Home() {
     <main className="mx-auto max-w-6xl px-6 pb-16 pt-10">
       <section className="grid items-center gap-10 lg:grid-cols-2">
         <div className="space-y-6">
-          <div className="flex items-center gap-3">
-            <div className="grid h-12 w-12 place-items-center overflow-hidden rounded-full border border-[var(--line)] bg-white/80 shadow-sm">
+          <div className="flex items-center gap-5">
+            <div className="grid h-20 w-20 place-items-center overflow-hidden rounded-full border border-[var(--line)] bg-white/80 shadow-sm">
               <Image
-                src="/logowoollilly.jpg"
+                src="/logo.jpg"
                 alt="Woollilly logo"
-                width={48}
-                height={48}
+                width={80}
+                height={80}
                 className="h-full w-full object-cover"
               />
             </div>
             <div>
-              <div className="font-display text-xl text-[var(--ink)]">Woollilly · With You</div>
+              <div className="font-display text-2xl text-[var(--ink)]">Woollilly · With You</div>
               <div className="text-xs uppercase tracking-[0.25em] text-[var(--muted)]">
                 Pehmeä atelier
               </div>

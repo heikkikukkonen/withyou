@@ -371,10 +371,10 @@ export default function WizardPage() {
 
       <div className="relative mx-auto max-w-3xl space-y-6">
         <header className="flex flex-wrap items-center justify-between gap-4">
-          <div className="flex items-center gap-3">
-            <div className="grid h-12 w-12 place-items-center overflow-hidden rounded-full border border-[var(--line)] bg-white/80 shadow-sm">
+          <div className="flex items-center gap-4">
+            <div className="grid h-16 w-16 place-items-center overflow-hidden rounded-full border border-[var(--line)] bg-white/80 shadow-sm">
               <img
-                src="/logowoollilly.jpg"
+                src="/logo.jpg"
                 alt="Woollilly logo"
                 className="h-full w-full object-cover"
               />
