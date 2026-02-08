@@ -23,8 +23,8 @@ export async function POST(req: Request) {
       <li>Luo: ${generated.results.castOnStitches} s</li>
       <li>Lisäyskierrokset: ${generated.results.yokeIncreaseRounds} kpl</li>
       <li>Vartalon silmukat erotuksessa: ${generated.results.separationStitchesBody} s</li>
-      <li>Vartalon pituus: ${generated.results.bodyLengthRows} krs</li>
-      <li>Hihan pituus: ${generated.results.sleeveLengthRows} krs</li>
+      <li>Vartalon pituus: ${generated.results.bodyLenRows} krs</li>
+      <li>Hihan pituus: ${generated.results.sleeveLenRows} krs</li>
     </ul>
   `;
 
