@@ -114,7 +114,18 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="mt-10 grid gap-6 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
+        <div className="mt-10 grid gap-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-stretch">
+          <div className="relative overflow-hidden rounded-[2.5rem] border border-[var(--line)] bg-white/70 shadow-[var(--shadow)]">
+            <div className="relative h-full min-h-[340px] lg:min-h-[420px]">
+              <Image
+                src="/hero-2.jpg"
+                alt="Woollilly story imagery"
+                fill
+                className="object-cover"
+              />
+            </div>
+          </div>
+
           <div className="rounded-[2.5rem] border border-[var(--line)] bg-white/70 p-6 shadow-[var(--shadow)]">
             <h3 className="font-display text-2xl text-[var(--ink)]">
               Neuleohje ei ole kaava, vaan keskustelu
@@ -123,17 +134,6 @@ export default function Home() {
               With You -ohje sanoo: “kerro kuka olet, niin tehdään tämä yhdessä.”
               Se on kuunteleva ja kunnioittava keskustelu vaatteen ja ihmisen välillä.
             </p>
-          </div>
-
-          <div className="relative overflow-hidden rounded-[2.5rem] border border-[var(--line)] bg-white/70 shadow-[var(--shadow)]">
-            <div className="relative aspect-[4/3]">
-              <Image
-                src="/hero-2.jpg"
-                alt="Woollilly story imagery"
-                fill
-                className="object-cover"
-              />
-            </div>
           </div>
         </div>
       </section>
