@@ -15,7 +15,7 @@ type StepConfig = {
   lead?: string;
   hint?: string;
   cta?: string;
-  render: () => JSX.Element;
+  render: () => React.ReactNode;
   isValid?: () => boolean;
 };
 
